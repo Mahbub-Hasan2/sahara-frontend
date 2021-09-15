@@ -2,7 +2,7 @@ import Head from 'next/head'
 import React from 'react';
 import Footer from '../components/ShareComponents/Footer';
 import Navbar from '../components/ShareComponents/Navbar';
-import MetaLinks from './MetaLinks';
+// import MetaLinks from './MetaLinks';
 // import Footer from '../components/ShareComponents/Footer';
 // import Navbar from '../components/ShareComponents/Navbar';
 // import MetaLinks from './MetaLinks';
