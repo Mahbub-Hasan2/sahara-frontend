@@ -1,0 +1,70 @@
+@import "../../utilities/variables";
+
+#c_H_header_area {
+  min-height: 840px;
+  .container {
+    max-width: 1000px !important;
+    margin: 0 auto;
+    .row {
+      min-height: 550px;
+      font-family: Poppins;
+      color: $black;
+
+      h3 {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 60px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 40px;
+      }
+
+      #download_app {
+        img {
+          background: black;
+          border-radius: 7px;
+          width: 110px;
+          cursor: pointer;
+        }
+        img:nth-child(2) {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+
+  // Trusted By
+  #c_H_Dipercaya_Oleh {
+    text-align: center;
+
+    p {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 16px;
+      color: #777986;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+    div {
+        display: block;
+        position: absolute;
+        animation: linear infinite alternate;
+        animation-name: run;
+        animation-duration: 2s;
+      }
+      
+      @-webkit-keyframes run {
+          0% {
+            left: 0;
+            transform: translateX(0);
+          }
+          100% {
+            left: 100%;
+            transform: translateX(-100%);
+          }
+      }
+    
+  }
+}
