@@ -1,0 +1,34 @@
+@import "../utilities/variables";
+
+#c_s_Navbar_area {
+    font-family: "Poppins", sans-serif;
+  .navbar {
+    .navbar-collapse {
+      div {
+        .def_active_btn {
+          background: $CadmiumOrange;
+          font-size: 16px;
+        }
+        .btn-ID,
+        .btn-EN {
+          font-size: 18px;
+          font-weight: 700;
+          padding: 10px 7px 8px !important;
+        }
+        .btn-ID {
+          color: $DarkMintGreen;
+        }
+        .btn-EN {
+          color: rgb(194, 189, 189);
+        }
+      }
+      .nav-item {
+        font-weight: 700;
+        padding: 0px 5px;
+        a {
+          color: #282a3a;
+        }
+      }
+    }
+  }
+}
