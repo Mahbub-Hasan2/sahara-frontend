@@ -3,7 +3,7 @@
 #c_H_header_area {
   min-height: 840px;
   .container {
-    max-width: 1000px !important;
+    max-width: 1000px;
     margin: 0 auto;
     .row {
       min-height: 550px;
@@ -48,23 +48,31 @@
       margin-bottom: 40px;
     }
     div {
-        display: block;
-        position: absolute;
-        animation: linear infinite alternate;
-        animation-name: run;
-        animation-duration: 2s;
-      }
-      
-      @-webkit-keyframes run {
-          0% {
-            left: 0;
-            transform: translateX(0);
-          }
-          100% {
-            left: 100%;
-            transform: translateX(-100%);
-          }
-      }
-    
+      overflow: scroll;
+      overflow-x: hidden;
+      // display: block;
+      // position: absolute;
+      // animation: linear infinite alternate;
+      // animation-name: run;
+      // animation-duration: 2s;
+    }
+    div::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    div::-webkit-scrollbar-thumb {
+      background: #ff0000;
+    }
+
+    // @-webkit-keyframes run {
+    //     0% {
+    //       left: 0;
+    //       transform: translateX(0);
+    //     }
+    //     100% {
+    //       left: 100%;
+    //       transform: translateX(-100%);
+    //     }
+    // }
   }
 }

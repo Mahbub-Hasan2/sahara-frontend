@@ -1,0 +1,6 @@
+@import "../../utilities/variables";
+@import '../../utilities/mixins';
+
+#C_H_our_service_area{
+    @extend .container
+}

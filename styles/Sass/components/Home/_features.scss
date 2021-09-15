@@ -1,0 +1,7 @@
+
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+#C_H_Features_area{
+    @extend .Container;
+}
