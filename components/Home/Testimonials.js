@@ -2,8 +2,10 @@ import React from 'react';
 
 const Testimonials = () => {
     return (
-        <div>
-            <h2>hello</h2>
+        <div id="C_H_Testimonials_area">
+            <div className="container">
+                <h3>Testimoni Warung</h3>
+            </div>
         </div>
     );
 };

@@ -1,2 +1,12 @@
 @import "../../utilities/variables";
+@import "../../utilities/mixins";
 
+#C_H_Testimonials_area {
+  min-height: 505px;
+  background-image: url("/Assets/backgroundImg/testimonials\ bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    @extend .container;
+  }
+}

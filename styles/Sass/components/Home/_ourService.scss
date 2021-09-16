@@ -1,6 +1,72 @@
 @import "../../utilities/variables";
-@import '../../utilities/mixins';
+@import "../../utilities/mixins";
 
-#C_H_our_service_area{
-    @extend .container
+#C_H_our_service_area {
+  background-image: url(/Assets/backgroundImg/service\ gb.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 824px;
+  padding: 100px 0px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .container {
+    @extend .container;
+  }
+  #title_site {
+    margin-bottom: 50px;
+    p {
+      font-family: "Inter", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    h5 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 48px;
+      color: #8ccba5;
+      span {
+        margin-right: 15px;
+      }
+      .activ_box {
+        color: $black;
+      }
+      .dari {
+        font-weight: 500;
+        height: 40px;
+      }
+    }
+  }
+  .row {
+    .col-md {
+      h3 {
+        font-family: Inter;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 44px;
+      }
+      p {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7bb793;
+      }
+      .btn-warning {
+        padding: 12px 24px;
+        background: #ff8126;
+        border-radius: 8px;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+  }
 }

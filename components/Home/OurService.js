@@ -3,12 +3,12 @@ import React from 'react';
 const OurService = () => {
     return (
         <div id="C_H_our_service_area">
-            <div className="container">
-                <div>
+            <div className="container  align-items center">
+                <div id="title_site">
                     <p>Layanan kami</p>
-                    <h5><span>Belanja Online</span> <span>Sahara POS</span> <spna>Mpok Sahara</spna> <span>Supplier</span></h5>
+                    <h5><span className="activ_box">Belanja Online</span> <span className="dari">|</span> <span>Sahara POS</span> <span className="dari">|</span> <span>Mpok Sahara</span> <span className="dari">|</span> <span>Supplier</span></h5>
                 </div>
-                <div className="row">
+                <div className="row align-items-center">
                     <div className="col-md">
                         <img src="Assets/service img.png" alt="" className="img-fluid" />
                     </div>
@@ -17,7 +17,7 @@ const OurService = () => {
                             Bersama UMKM Lokal
                         </h3>
                         <p>Pertama dan satu-satunya jaringan usaha warung kelontong yang dikelola oleh perempuan! Sejak 2015, SAHARA telah bekerjasama dengan INKOWAPI (Induk Koperasi .</p>
-                        <button>Gabung Sekarang</button>
+                        <button className="btn btn-warning">Gabung Sekarang</button>
                     </div>
                 </div>
             </div>

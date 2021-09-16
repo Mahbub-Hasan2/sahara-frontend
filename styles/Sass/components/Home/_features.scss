@@ -1,7 +1,94 @@
-
 @import "../../utilities/variables";
 @import "../../utilities/mixins";
 
-#C_H_Features_area{
-    @extend .Container;
+#C_H_Features_area {
+  background-image: url("/Assets/FeaturesMobailBg.png");
+  background-repeat: no-repeat;
+  background-size: 53%;
+  background-position: top 140px left -10px;
+
+  min-height: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .container {
+    @extend .container;
+  }
+  .row {
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .col-md {
+      .head {
+        h3 {
+            font-family: Poppins;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 44px;
+          color: $black;
+        }
+        p {
+          font-family: Poppins;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          color: #000000;
+        }
+      }
+
+      .box {
+        background: #ffffff;
+        border: 1px solid #cfcfcf;
+        box-sizing: border-box;
+        border-radius: 16px;
+        padding: 10px 10px 10px 7px;
+        margin-bottom: 20px;
+        max-width: 406px;
+
+        div {
+          h5 {
+            font-family: Poppins;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            color: #777986;
+          }
+          p {
+            font-family: Poppins;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: #d5d6db;
+            margin-bottom: 0px;
+          }
+        }
+      }
+
+      .counts {
+        width: 30px;
+        text-align: center;
+        margin-right: 5px;
+        font-family: Poppins;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 30px;
+        color: #777986;
+      }
+      .active {
+        background: #1abd6a;
+        .counts {
+          color: #fff;
+        }
+        div {
+          h5 {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
