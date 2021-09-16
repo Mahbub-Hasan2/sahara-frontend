@@ -1,0 +1,72 @@
+@import "../../utilities/variables";
+@import "../../utilities/mixins";
+
+#C_H_late_covered_area {
+  min-height: 1000px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .MuiContainer-root {
+    height: 100%;
+  }
+  .logos_img {
+    text-align: center;
+    h5 {
+      font-family: Poppins;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 64px;
+      color: #282a3a;
+      margin-bottom: 50px;
+    }
+    img {
+      margin-bottom: 100px;
+    }
+  }
+
+  #slider_area {
+    // background img
+    background-image: url("/Assets/backgroundImg/Late Covered on.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 374px;
+    background-position: center;
+    // background img
+
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
