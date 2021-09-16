@@ -1,9 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
-import React from 'react';
+import React, { useEffect } from 'react';
 import Link from 'next/link';
 
+
 const Navbar = () => {
+    useEffect(() => {
+        var prevScrollpos = window.pageYOffset;
+
+        const changeNavbarBg = () => {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("c_s_Navbar_area").style.top = "0";
+            } else {
+                document.getElementById("c_s_Navbar_area").style.top = "-65px";
+            }
+            prevScrollpos = currentScrollPos;
+        };
+        window.addEventListener('scroll', changeNavbarBg);
+    }, []);
+
+    
     return (
         <div id="c_s_Navbar_area">
             {/* <!-- Navbar --> */}

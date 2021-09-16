@@ -18,7 +18,9 @@ const Layout = ({ children }) => {
             {/* <MetaLinks/> */}
 
             {/* Navbar section  */}
-            <Navbar/>
+            <div className="mb-5 pb-3">
+                <Navbar />
+            </div>
 
             {/* All meta tags and css links  */}
             {/* <MetaLinks /> */}
@@ -28,7 +30,7 @@ const Layout = ({ children }) => {
 
 
             {/* Footer section  */}
-            <Footer/>
+            <Footer />
         </>
     );
 };
