@@ -5,8 +5,8 @@ import Layout from '../Layout/Layout';
 // eslint-disable-next-line
 import "swiper/css/bundle";
 import "swiper/css";
-import "swiper/css/pagination"
-import "swiper/css/navigation"
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 function MyApp({ Component, pageProps }) {
   return (

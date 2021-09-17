@@ -6,7 +6,7 @@ const MetaLinks = () => {
         <div>
             <Head>
                 <meta charSet="utf-8" />
-                <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+                <meta httpEquiv="Content-Type" content="text/html;charSet=UTF-8" />
                 <meta
                     name="description"
                     content="Yeender is a one spot digital solution Canadian-based company. We specialize in web development, web design, digital marketing, and graphic design. Working together with businesses and individuals to fulfill their needs."
