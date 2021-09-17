@@ -1,10 +1,9 @@
-import DownloadApp from "../components/DownloadApp";
+import DownloadApp from "../components/ShareComponents/DownloadApp";
 import Features from "../components/Home/Features";
 import Header from "../components/Home/Header";
 import LateCovered from "../components/Home/LateCovered";
-import OurService from "../components/Home/OurService";
-import Testimonials from "../components/Home/Testimonials";
-
+import OurService from "../components/ShareComponents/OurService";
+import Testimonials from "../components/ShareComponents/Testimonials";
 
 export default function Home() {
   return (

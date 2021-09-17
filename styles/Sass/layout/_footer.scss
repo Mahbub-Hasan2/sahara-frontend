@@ -12,9 +12,10 @@
       i {
         color: $DarkMintGreen;
         background-color: $HintOfGreen;
-        padding: 7px;
+        padding: 10px;
         border-radius: 50px;
         margin-right: 13px;
+        font-size: 25px;
       }
 
       h5 {
@@ -51,20 +52,36 @@
     color: #282a3a;
   }
 
-  .cu_div{
-      p{
-        font-family: Poppins;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 21px;
-        color: #282a3a; 
-      }
+  .cu_div {
+    p {
+      font-family: Poppins;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #282a3a;
+    }
   }
 
-  .downloadApp_imgs{
-      img{
-          width: 121.33px;
-          margin-bottom: 8px;
-      }
+  .downloadApp_imgs {
+    img {
+      width: 121.33px;
+      margin-bottom: 8px;
+    }
+  }
+  .copyRightTexts {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 24px;
+    color: #cdd0d6;
+  }
+
+  .f_b_Social_icons{
+    i{
+      font-size: 20px;
+    color: $DarkMintGreen;
+    background-color: $HintOfGreen;
+    border-radius: 50px;
+    padding: 10px;
+    }
   }
 }

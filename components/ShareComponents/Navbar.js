@@ -20,7 +20,7 @@ const Navbar = () => {
         window.addEventListener('scroll', changeNavbarBg);
     }, []);
 
-    
+
     return (
         <div id="c_s_Navbar_area">
             {/* <!-- Navbar --> */}
@@ -28,15 +28,17 @@ const Navbar = () => {
                 {/* <!-- Container wrapper --> */}
                 <div className="container">
                     {/* <!-- Navbar brand --> */}
-                    <a className="navbar-brand me-2" href="/">
-                        <img
-                            src="/Assets/Illustration/PNG/Sahara Logo.png"
-                            height="40"
-                            alt=""
-                            loading="lazy"
-                            style={{ marginTop: "-1px" }}
-                        />
-                    </a>
+                    <Link href="/">
+                        <a className="navbar-brand me-2">
+                            <img
+                                src="/Assets/Illustration/PNG/Sahara Logo.png"
+                                height="40"
+                                alt=""
+                                loading="lazy"
+                                style={{ marginTop: "-1px" }}
+                            />
+                        </a>
+                    </Link>
 
                     {/* <!-- Toggle button --> */}
                     <button
@@ -56,17 +58,17 @@ const Navbar = () => {
                         {/* <!-- Left links --> */}
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link href="#">
+                                <Link href="/JoinUs">
                                     <a className="nav-link">Gabung kami</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="#">
+                                <Link href="/blogs">
                                     <a className="nav-link">Blog</a>
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="#">
+                                <Link href="/AboutUs">
                                     <a className="nav-link">Tentang Kami</a>
                                 </Link>
                             </li>
