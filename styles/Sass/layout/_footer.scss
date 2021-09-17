@@ -1,0 +1,70 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+
+#C_SC_footer_area {
+  .footer_logo {
+    width: 150px;
+    top: -15px;
+    position: relative;
+  }
+  .footer_info_box {
+    div {
+      i {
+        color: $DarkMintGreen;
+        background-color: $HintOfGreen;
+        padding: 7px;
+        border-radius: 50px;
+        margin-right: 13px;
+      }
+
+      h5 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 21px;
+        color: #282a3a;
+        margin-bottom: 3px;
+      }
+
+      p {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 21px;
+        color: #282a3a;
+      }
+    }
+  }
+
+  .text_head_line {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282a3a;
+  }
+  .description_text {
+    font-family: Poppins;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #282a3a;
+  }
+
+  .cu_div{
+      p{
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 21px;
+        color: #282a3a; 
+      }
+  }
+
+  .downloadApp_imgs{
+      img{
+          width: 121.33px;
+          margin-bottom: 8px;
+      }
+  }
+}

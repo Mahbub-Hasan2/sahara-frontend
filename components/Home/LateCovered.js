@@ -74,7 +74,7 @@ const LateCovered = () => {
                                 <div className="card">
                                     <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                         <img
-                                            src="https://i.imgur.com/BsLiHRu.png"
+                                            src="https://i.imgur.com/bSARGOL.png"
                                             alt=""
                                             className="img-fluid"
                                         />
@@ -95,7 +95,7 @@ const LateCovered = () => {
                                 <div className="card">
                                     <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
                                         <img
-                                            src="https://i.imgur.com/BsLiHRu.png"
+                                            src="https://i.imgur.com/qfnDWvb.png"
                                             alt=""
                                             className="img-fluid"
                                         />

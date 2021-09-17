@@ -13,6 +13,7 @@
 
 // layout
 @import "./layout/navbar";
+@import "./layout/footer";
 
 
 // components
@@ -21,6 +22,8 @@
 @import "./components/Home/features";
 @import "./components/Home/testimonials";
 @import "./components/Home/lateCovered";
+
+@import "./components/DownloadApp/downloadApp";
 
 
 // pages
