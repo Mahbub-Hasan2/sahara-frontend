@@ -1,0 +1,35 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_A_OurVision_area {
+  min-height: 780px;
+  background-image: url("/Assets/backgroundImg/OurVisionBG.png");
+  background-repeat: no-repeat;
+  background-size: 330px;
+  background-position: top 200px right 70px;
+  color: #000000;
+  padding-bottom: 100px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    width: 380px;
+    border-radius: 15px;
+  }
+  h4 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  p {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

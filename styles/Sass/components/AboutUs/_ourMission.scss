@@ -1,0 +1,32 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_A_OurMission_area {
+  min-height: 700px;
+  background-image: url("/Assets/backgroundImg/OurMissionBG.png");
+  background-repeat: no-repeat;
+  background-size: 470px;
+  background-position: top 70px left 0px;
+  color: #000000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  img {
+    width: 380px;
+  }
+  h4 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  p{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
