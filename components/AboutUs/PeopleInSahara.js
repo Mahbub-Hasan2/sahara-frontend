@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { Component } from "react";
 import Slider from "react-slick";
 
@@ -36,37 +37,161 @@ const PeopleInSahara = () => {
             }
         ]
     };
+
     return (
         <div id="C_A_people_IN_sahara_area">
-            <h4 className="title">People in Sahara</h4>
-            <div className="slider_area">
-                <h2> Responsive </h2>
-                <Slider {...settings}>
+            <h5 className="title">People in Sahara</h5>
+            <div id="slider_area">
+                <div className="container align-items-center">
                     <div>
-                        <h3>1</h3>
+                        <Slider {...settings}>
+                            <div>
+                                <div className="card">
+                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                        <img
+                                            src="https://i.imgur.com/mKE0pIy.png"
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                        <a href="#!">
+                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Muhammad Irsan
+                                            Saputra
+                                        </h5>
+                                        <p className="card-text">
+                                            “Buat saya membantu usaha
+                                            kecil adalah yg utama”
+                                        </p>
+                                        <i className="fab fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="card">
+                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                        <img
+                                            src="https://i.imgur.com/XbpPVrK.png"
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                        <a href="#!">
+                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Muhammad Irsan
+                                            Saputra
+                                        </h5>
+                                        <p className="card-text">
+                                            “Buat saya membantu usaha
+                                            kecil adalah yg utama”
+                                        </p>
+                                        <i className="fab fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="card">
+                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                        <img
+                                            src="https://i.imgur.com/f3736Cp.jpg"
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                        <a href="#!">
+                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Muhammad Irsan
+                                            Saputra
+                                        </h5>
+                                        <p className="card-text">
+                                            “Buat saya membantu usaha
+                                            kecil adalah yg utama”
+                                        </p>
+                                        <i className="fab fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="card">
+                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                        <img
+                                            src="https://i.imgur.com/emrxG1A.jpg"
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                        <a href="#!">
+                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Muhammad Irsan
+                                            Saputra
+                                        </h5>
+                                        <p className="card-text">
+                                            “Buat saya membantu usaha
+                                            kecil adalah yg utama”
+                                        </p>
+                                        <i className="fab fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="card">
+                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                        <img
+                                            src="https://i.imgur.com/emrxG1A.jpg"
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                        <a href="#!">
+                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Muhammad Irsan
+                                            Saputra
+                                        </h5>
+                                        <p className="card-text">
+                                            “Buat saya membantu usaha
+                                            kecil adalah yg utama”
+                                        </p>
+                                        <i className="fab fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="card">
+                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                        <img
+                                            src="https://i.imgur.com/emrxG1A.jpg"
+                                            alt=""
+                                            className="img-fluid"
+                                        />
+                                        <a href="#!">
+                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                        </a>
+                                    </div>
+                                    <div className="card-body">
+                                        <h5 className="card-title">Muhammad Irsan
+                                            Saputra
+                                        </h5>
+                                        <p className="card-text">
+                                            “Buat saya membantu usaha
+                                            kecil adalah yg utama”
+                                        </p>
+                                        <i className="fab fa-linkedin"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </Slider>
                     </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                    <div>
-                        <h3>7</h3>
-                    </div>
-                    <div>
-                        <h3>8</h3>
-                    </div>
-                </Slider>
+                </div>
             </div>
         </div>
     );

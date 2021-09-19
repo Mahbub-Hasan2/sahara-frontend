@@ -1,0 +1,79 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_A_people_IN_sahara_area {
+  min-height: 900px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  #slider_area {
+    // background img
+    background-image: url("/Assets/backgroundImg/sahara-pplBG.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-position: center;
+    // background img
+    .slick-prev:before {
+      color: $black !important;
+    }
+    .slick-next:before {
+      color: $black !important;
+    }
+
+    .card {
+      // height: 362px;
+      // width: 270px;
+      position: relative;
+      margin: 30px 10px;
+      top: -25px;
+
+      div {
+        img {
+          clip-path: circle(91.8% at 49% 2%) !important;
+          height: 205px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .card-body {
+        text-align: center;
+        padding: 10px 16px;
+
+        .card-title {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          margin-bottom: 15px;
+        }
+        .card-text {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 10px;
+        }
+        i {
+            color: #D5D6DB;
+            font-size: 20px;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+}
