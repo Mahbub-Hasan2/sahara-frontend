@@ -1,0 +1,89 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_J_joinNow_area {
+  min-height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+
+  .container {
+    @extend .container;
+  }
+
+  .row {
+    h4 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 39px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    form {
+      label {
+        font-family: Poppins;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #1e0e62;
+      }
+      input {
+        mix-blend-mode: normal;
+        border: 2px solid #ebeaed;
+        box-sizing: border-box;
+        border-radius: 16px;
+        height: 60px;
+      }
+
+      input::placeholder {
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        /* identical to box height, or 130% */
+
+        display: flex;
+        align-items: center;
+
+        color: #ebeaed;
+      }
+
+      button {
+        // width: 196px;
+        // height: 48px;
+        background-color: #48cb7f;
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        display: flex;
+        align-items: center;
+
+        /* Colors / White */
+        color: #ffffff;
+      }
+    }
+
+    // img styles
+    .img {
+      text-align: end;
+      img {
+        height: 500px;
+      }
+    }
+    @media (max-width: 791px) {
+      .img {
+        display: none;
+      }
+    }
+  }
+}

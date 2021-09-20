@@ -1,0 +1,75 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_J_HubungiCS_area {
+  min-height: 704px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 50px;
+  .container {
+    @extend .container;
+  }
+
+  .card_area {
+    height: 324px;
+    background: #e5fff0;
+    padding: 50px;
+    border-radius: 20px;
+
+    h4 {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 42px;
+      color: #282a3a;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-family: Poppins;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000000;
+      margin-bottom: 40px;
+    }
+
+    button {
+      font-family: Poppins;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+      background: #ff8126;
+      border-radius: 16px;
+    }
+
+    .img {
+      width: 380;
+      height: 500px;
+      img {
+        position: absolute;
+        top: -285px;
+        // left: 40px;
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 855px) {
+    min-height: auto;
+
+    .card_area {
+      height: auto;
+    }
+    .img {
+      display: none;
+    }
+
+    h4 {
+      br {
+        display: none;
+      }
+    }
+  }
+}
