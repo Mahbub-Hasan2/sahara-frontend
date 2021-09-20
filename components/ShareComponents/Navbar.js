@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 
@@ -12,6 +12,7 @@ const Navbar = () => {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("c_s_Navbar_area").style.top = "0";
+                
             } else {
                 document.getElementById("c_s_Navbar_area").style.top = "-65px";
             }
@@ -20,11 +21,25 @@ const Navbar = () => {
         window.addEventListener('scroll', changeNavbarBg);
     }, []);
 
+    
+    const [white, setWhite] = React.useState(false);
+    useEffect(() => {
+        const changeNavbarBg = () => {
+            if (window.scrollY >= 90) {
+                setWhite(true);
+            } else {
+                setWhite(false);
+            }
+        };
+        window.addEventListener('scroll', changeNavbarBg);
+    }, []);
+  
+
 
     return (
         <div id="c_s_Navbar_area">
             {/* <!-- Navbar --> */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className={`navbar navbar-expand-lg navbar-light ${white ? "bg-white" : "bg-none"}`}>
                 {/* <!-- Container wrapper --> */}
                 <div className="container">
                     {/* <!-- Navbar brand --> */}

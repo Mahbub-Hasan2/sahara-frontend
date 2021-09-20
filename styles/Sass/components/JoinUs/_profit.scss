@@ -1,0 +1,22 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_J_profit_area{
+    min-height: 724px;
+    background-color: #FFF5DE;
+
+    .container{
+        @extend .container;
+    }
+
+    .head_lines{
+        p{
+            
+        }
+        h4{
+            span{
+                
+            }
+        }
+    }
+}

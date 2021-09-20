@@ -7,6 +7,17 @@
     width: 100%;
     transition: top 0.6s;
     z-index: 5;
+
+    .bg-white{
+      background: $white;
+    }
+    .bg-none{
+      background: rgba(255, 255, 255, 0);
+    }
+
+    @media (max-width: 991px) {
+      background: $white;
+    }
   .navbar {
     .navbar-collapse {
       div {

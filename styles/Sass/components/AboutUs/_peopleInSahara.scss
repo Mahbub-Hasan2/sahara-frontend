@@ -2,7 +2,7 @@
 @import "../../utilities/variables";
 
 #C_A_people_IN_sahara_area {
-  min-height: 900px;
+  min-height: 800px;
 
   display: flex;
   align-items: center;
@@ -72,6 +72,10 @@
             color: #D5D6DB;
             font-size: 20px;
             cursor: pointer;
+            
+        }
+        i:hover{
+          color: #bebfc5;
         }
       }
     }
