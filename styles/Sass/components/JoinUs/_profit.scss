@@ -1,22 +1,76 @@
 @import "../../utilities/mixins";
 @import "../../utilities/variables";
 
-#C_J_profit_area{
-    min-height: 724px;
-    background-color: #FFF5DE;
+#C_J_profit_area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
-    .container{
-        @extend .container;
-    }
 
-    .head_lines{
-        p{
-            
-        }
-        h4{
-            span{
-                
-            }
-        }
+  min-height: 724px;
+  background-color: #fff5de;
+  padding: 80px 0px;
+  .container {
+    // @extend .container;
+  }
+
+  .head_lines {
+    p {
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #282a3a;
+      margin-bottom: 20px;
     }
+    h4 {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 48px;
+      margin-bottom: 50px;
+      color: #282a3a;
+      cursor: pointer;
+      span {
+        color: #ffdeab;
+        border-left: 3px solid #ffdeab;
+        padding-left: 25px;
+        margin-left: 25px;
+      }
+    }
+  }
+
+  .cards {
+    .col-md-6 {
+      display: flex;
+
+      .img {
+        margin-right: 24px;
+        width: 140px;
+        img {
+        //   width: 100px;
+        }
+      }
+      .text {
+        h5 {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 36px;
+          font-feature-settings: "salt" on, "liga" off;
+          color: #282a3a;
+        }
+        p {
+          font-family: Inter;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          color: #282a3a;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
 }
