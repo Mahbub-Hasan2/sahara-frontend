@@ -1,0 +1,99 @@
+@import "../../utilities/mixins";
+@import "../../utilities/variables";
+
+#C_B_blogHeader_area {
+  .head_line {
+    img {
+    }
+    position: relative;
+    .overlay {
+      padding: 16px 24px;
+      position: absolute;
+      max-width: 440px;
+      height: 113px;
+      left: 24px;
+      bottom: 15px;
+
+      background: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(14px);
+      /* Note: backdrop-filter has minimal browser support */
+
+      border-radius: 16px;
+      color: #ffffff;
+
+      h5 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      p {
+        font-family: Inter;
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+    .overlay:hover {
+      h5 {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+  .blogs {
+    button {
+      margin: 25px 2px;
+      font-weight: 700 !important;
+      color: #ced0d6;
+    }
+    .active-color {
+      color: black;
+    }
+
+    .card {
+        margin-bottom: 10px;
+        img{
+            border-radius: 10px;
+            cursor: pointer;
+        }
+      .card-body {
+        padding: 10px 5px 15px 5px;
+        .category-btn {
+          margin: 0px;
+          width: 47px;
+          height: 29px;
+          background: #dadce2;
+          border-radius: 8px;
+          font-family: Poppins;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: normal !important;
+          color: #000000;
+          border: none;
+          margin-bottom: 13px;
+        }
+
+        .card-title {
+          font-family: Poppins;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 24px;
+          color: #282a3a;
+        }
+        .card-text {
+          font-family: Poppins;
+          font-size: 14px;
+          line-height: 21px;
+          color: #777986;
+        }
+        .card-footer-text {
+          font-family: Poppins;
+          font-size: 12px;
+          line-height: 18px;
+          color: #d5d6db;
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

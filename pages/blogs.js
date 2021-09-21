@@ -1,10 +1,11 @@
 import React from 'react';
+import BlogHeader from '../components/Blogs/BlogHeader';
 
 const Blogs = () => {
     return (
-        <div>
-            This is blog page
-        </div>
+        <>
+            <BlogHeader/>
+        </>
     );
 };
 
