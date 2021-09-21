@@ -1,6 +1,12 @@
 import '../styles/Sass/main.scss';
 import Layout from '../Layout/Layout';
 
+// pages all scss
+import "../styles/Sass/pages/home.scss";
+import "../styles/Sass/pages/aboutUs.scss";
+import "../styles/Sass/pages/joinUs.scss";
+import "../styles/Sass/pages/blogs.scss";
+
 // Import Swiper styles
 // eslint-disable-next-line
 import "swiper/css/bundle";
