@@ -41,7 +41,8 @@
       margin: 30px 10px;
       top: -25px;
 
-      div {
+      .bg-image {
+        height: 205px;
         img {
           clip-path: circle(91.8% at 49% 2%) !important;
           height: 205px;

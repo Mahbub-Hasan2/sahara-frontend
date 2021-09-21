@@ -44,9 +44,9 @@
       }
 
       .img{
-          text-align: end;
+          height: 511 !important;
         img {
-            height: 511px;
+            height: 100% !important;
             border-radius: 15px;
           }
       }

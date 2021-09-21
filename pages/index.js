@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic'
 import DownloadApp from "../components/ShareComponents/DownloadApp";
 import Features from "../components/Home/Features";
 // import Header from "../components/Home/Header";
-import LateCovered from "../components/Home/LateCovered";
+// import LateCovered from "../components/Home/LateCovered";
 import Testimonials from "../components/ShareComponents/Testimonials";
 import Loading from "../components/ShareComponents/Loading";
 
@@ -12,6 +12,11 @@ const Header = dynamic(() => import('../components/Home/Header'), {
   ssr: false,
 });
 const OurService = dynamic(() => import('../components/ShareComponents/OurService'), {
+  loading: () => <Loading />,
+  ssr: false,
+});
+
+const LateCovered = dynamic(() => import('../components/Home/LateCovered'), {
   loading: () => <Loading />,
   ssr: false,
 });

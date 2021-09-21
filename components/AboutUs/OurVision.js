@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Image from 'next/image';
 
 const OurVision = () => {
     return (
@@ -13,7 +14,16 @@ const OurVision = () => {
                         </p>
                     </div>
                     <div className="col-md text-end">
-                        <img src="/Assets/backgroundImg/vision.png" alt="" className="img-fluid" />
+                        <Image
+                            src="/Assets/backgroundImg/vision.png"
+                            alt="Picture of the author"
+                            width={380}
+                            height={500}
+                            // layout="fill"
+                            layout="intrinsic"
+                            objectFit="cover"
+                            className="img-fluid"
+                        />
                     </div>
                 </div>
             </div>

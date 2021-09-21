@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const AboutUsHeader = () => {
     return (
@@ -12,8 +13,18 @@ const AboutUsHeader = () => {
                             <p>Pertama dan satu-satunya jaringan usaha warung kelontong yang dikelola oleh perempuan! Sejak 2015, SAHARA telah bekerjasama dengan INKOWAPI (Induk Koperasi .</p>
                             <button className="btn btn-warning">Belanja Sekarang</button>
                         </div>
-                        <div className="col-md img">
-                            <img src="https://i.imgur.com/oygyZ0N.png" alt="" className="img-fluid" />
+                        <div className="col-md img text-end">
+                            {/* <img src="https://i.imgur.com/oygyZ0N.png" alt="" className="img-fluid" /> */}
+                            {/* <Image src="https://i.imgur.com/oygyZ0N.png" alt="" layout="fill" objectFit="cover" className="img-fluid" />  */}
+                            <Image
+                                src="https://i.imgur.com/oygyZ0N.png"
+                                alt="Picture of the author"
+                                width={420}
+                                height={511}
+                                // layout="fill"
+                                layout="intrinsic"
+                                objectFit="cover"
+                            />
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Image from 'next/image';
+
 
 const PeopleInSahara = () => {
     var settings = {
@@ -48,10 +50,20 @@ const PeopleInSahara = () => {
                             <div>
                                 <div className="card">
                                     <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                        <img
+                                        {/* <img
                                             src="https://i.imgur.com/mKE0pIy.png"
                                             alt=""
                                             className="img-fluid"
+                                        /> */}
+                                        <Image
+                                            src="https://i.imgur.com/mKE0pIy.png"
+                                            alt="Picture of the author"
+                                            // width={205}
+                                            // height={114}
+                                            layout="fill"
+                                            // layout="intrinsic"
+                                            objectFit="cover"
+                                            loading="lazy"
                                         />
                                         <a href="#!">
                                             <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>

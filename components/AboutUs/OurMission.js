@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
+import Image from 'next/image';
 
 const OurMission = () => {
     return (
@@ -7,7 +8,15 @@ const OurMission = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md">
-                        <img src="/Assets/backgroundImg/missionImg.png" alt="" className="img-fluid" />
+                        <Image
+                                src="/Assets/backgroundImg/missionImg.png"
+                                alt="Picture of the author"
+                                width={380}
+                                height={500}
+                                // layout="fill"
+                                layout="intrinsic"
+                                objectFit="cover"
+                            />
                     </div>
                     <div className="col-md">
                         <h4>Misi kami</h4>
