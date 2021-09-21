@@ -1,10 +1,5 @@
 /* eslint-disable react/display-name */
 import dynamic from 'next/dynamic'
-import DownloadApp from "../components/ShareComponents/DownloadApp";
-import Features from "../components/Home/Features";
-// import Header from "../components/Home/Header";
-// import LateCovered from "../components/Home/LateCovered";
-import Testimonials from "../components/ShareComponents/Testimonials";
 import Loading from "../components/ShareComponents/Loading";
 
 const Header = dynamic(() => import('../components/Home/Header'), {
@@ -15,8 +10,21 @@ const OurService = dynamic(() => import('../components/ShareComponents/OurServic
   loading: () => <Loading />,
   ssr: false,
 });
+const Features = dynamic(() => import('../components/Home/Features'), {
+  loading: () => <Loading />,
+  ssr: false,
+});
+
+const Testimonials = dynamic(() => import('../components/ShareComponents/Testimonials'), {
+  loading: () => <Loading />,
+  ssr: false,
+});
 
 const LateCovered = dynamic(() => import('../components/Home/LateCovered'), {
+  loading: () => <Loading />,
+  ssr: false,
+});
+const DownloadApp = dynamic(() => import('../components/ShareComponents/DownloadApp'), {
   loading: () => <Loading />,
   ssr: false,
 });
