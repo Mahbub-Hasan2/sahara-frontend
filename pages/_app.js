@@ -6,6 +6,7 @@ import "../styles/Sass/pages/home.scss";
 import "../styles/Sass/pages/aboutUs.scss";
 import "../styles/Sass/pages/joinUs.scss";
 import "../styles/Sass/pages/blogs.scss";
+import "../styles/Sass/pages/tos.scss";
 
 // Import Swiper styles
 // eslint-disable-next-line

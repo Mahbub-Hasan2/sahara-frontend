@@ -88,7 +88,7 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link href="#">
+                                <Link href="/TOS">
                                     <a className="nav-link">Karir</a>
                                 </Link>
                             </li>

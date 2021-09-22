@@ -1,6 +1,49 @@
 @import "../../utilities/mixins";
 @import "../../utilities/variables";
 
-#P_blog_detail_area{
-    
+#P_blog_detail_area {
+  .container {
+    max-width: 804px;
+  }
+  .head_section {
+    button {
+      margin: 25px 5px 10px 0px;
+      background: #dadce2;
+      border-radius: 8px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      border: none;
+      color: #000000;
+    }
+
+    h4 {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 41px;
+      color: #000000;
+      margin-bottom: 0px;
+    }
+
+    .user_info {
+    }
+  }
+
+  .body_section {
+    img {
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      color: #000000;
+    }
+  }
 }
