@@ -24,6 +24,7 @@
     }
     img {
       margin-bottom: 70px;
+      width: 100%;
     }
   }
 
@@ -37,36 +38,53 @@
     background-position: center;
     // background img
 
-
-    .card{
+    .card {
       // height: 362px;
       // width: 270px;
       margin: 0px 10px;
 
-      .card-body{
+      .card-body {
         text-align: start;
-        .name{
+        .name {
           font-family: Poppins;
           font-weight: 600;
           font-size: 14px;
           line-height: 21px;
-          color: #D5D6DB;
+          color: #d5d6db;
           margin-bottom: 5px;
         }
-        .card-title{
+        .card-title {
           font-family: Poppins;
           font-weight: 600;
           font-size: 17.8578px;
           line-height: 27px;
-          color: #000000;          
+          color: #000000;
         }
-        .card-text{
+        .card-text {
           font-family: Poppins;
           font-weight: normal;
           font-size: 14px;
           line-height: 21px;
           color: #777986;
-          
+        }
+      }
+    }
+  }
+
+  @media (max-width: 705px) {
+    min-height: 800px;
+    padding: 30px 0px 210px 0px;
+
+    .MuiContainer-root {
+      height: auto;
+    }
+    
+    .logos_img {
+      div {
+        overflow: scroll;
+        overflow-x: hidden;
+        img{
+          width: 300%;
         }
       }
     }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 
-const Header = () => {
+
+const Header = (props) => {
     return (
         <div id="c_H_header_area">
             <div className="container">

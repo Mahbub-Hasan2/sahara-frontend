@@ -25,7 +25,7 @@
     .col-md {
       .head {
         h3 {
-            font-family: Poppins;
+          font-family: Poppins;
           font-weight: bold;
           font-size: 36px;
           line-height: 44px;
@@ -67,7 +67,19 @@
           }
         }
       }
-
+      .box:hover {
+        transition: 0.5s;
+        cursor: pointer;
+        background: #1abd6a;
+        .counts {
+          color: #fff;
+        }
+        div {
+          h5 {
+            color: #fff;
+          }
+        }
+      }
       .counts {
         width: 30px;
         text-align: center;
@@ -87,6 +99,38 @@
           h5 {
             color: #fff;
           }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin: 50px 0px;
+    .row {
+      .img {
+        margin-bottom: 30px;
+      }
+      .col-md {
+        .head {
+          text-align: center;
+        }
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .box {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 386px) {
+    .head {
+      p{
+        br{
+          display: none;
         }
       }
     }

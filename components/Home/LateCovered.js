@@ -3,6 +3,39 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import Container from '@material-ui/core/Container';
 
+const lateCoveredFakeData = [
+    {
+        img: "https://i.imgur.com/BsLiHRu.png",
+        title: "Sahara Perkuat 50 Ribu Warung Kuliner di Jabot",
+        description: "Sahara sudah membantu saya menjangkau pelanggan di daer"
+    },
+    {
+        img: "https://i.imgur.com/bSARGOL.png",
+        title: "Sahara Perkuat 50 Ribu Warung Kuliner di Jabot",
+        description: "Sahara sudah membantu saya menjangkau pelanggan di daer"
+    },
+    {
+        img: "https://i.imgur.com/qfnDWvb.png",
+        title: "Sahara Perkuat 50 Ribu Warung Kuliner di Jabot",
+        description: "Sahara sudah membantu saya menjangkau pelanggan di daer"
+    },
+    {
+        img: "https://i.imgur.com/BsLiHRu.png",
+        title: "Sahara Perkuat 50 Ribu Warung Kuliner di Jabot",
+        description: "Sahara sudah membantu saya menjangkau pelanggan di daer"
+    },
+    {
+        img: "https://i.imgur.com/bSARGOL.png",
+        title: "Sahara Perkuat 50 Ribu Warung Kuliner di Jabot",
+        description: "Sahara sudah membantu saya menjangkau pelanggan di daer"
+    },
+    {
+        img: "https://i.imgur.com/qfnDWvb.png",
+        title: "Sahara Perkuat 50 Ribu Warung Kuliner di Jabot",
+        description: "Sahara sudah membantu saya menjangkau pelanggan di daer"
+    },
+]
+
 const LateCovered = () => {
     var settings = {
         dots: true,
@@ -43,76 +76,40 @@ const LateCovered = () => {
         <div id="C_H_late_covered_area">
             <div className="logos_img">
                 <h5>Telat Diliput di</h5>
-                <img src="/Assets/Media.png" alt="" className="img-fluid" />
+                <div>
+                    <img src="/Assets/Media.png" alt="" className="logo-img" />
+                </div>
             </div>
             <div id="slider_area">
                 <div className="container align-items-center">
                     <div>
                         <Slider {...settings}>
-                            <div>
-                                <div className="card">
-                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                        <img
-                                            src="https://i.imgur.com/BsLiHRu.png"
-                                            alt=""
-                                            className="img-fluid"
-                                        />
-                                        <a href="#!">
-                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
-                                        </a>
+
+                            {
+                                lateCoveredFakeData.map((data, index) => (
+                                    <div key={index}>
+                                        <div className="card mb-3">
+                                            <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                                <img
+                                                    src={data.img}
+                                                    alt=""
+                                                    className="img-fluid"
+                                                />
+                                                <a href="#!">
+                                                    <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
+                                                </a>
+                                            </div>
+                                            <div className="card-body">
+                                                <p className="name">Berita Satu</p>
+                                                <h5 className="card-title">{data.title.substring(46, 0) + "..."}</h5>
+                                                <p className="card-text">
+                                                    {data.description.substring(55, 0) + "..."}
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="card-body">
-                                        <p className="name">Berita Satu</p>
-                                        <h5 className="card-title">Sahara Perkuat 50 Ribu Warung Kuliner di Jabot...</h5>
-                                        <p className="card-text">
-                                            Sahara sudah membantu saya menjangkau pelanggan di daer...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="card">
-                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                        <img
-                                            src="https://i.imgur.com/bSARGOL.png"
-                                            alt=""
-                                            className="img-fluid"
-                                        />
-                                        <a href="#!">
-                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
-                                        </a>
-                                    </div>
-                                    <div className="card-body">
-                                        <p className="name">Berita Satu</p>
-                                        <h5 className="card-title">Sahara Perkuat 50 Ribu Warung Kuliner di Jabot...</h5>
-                                        <p className="card-text">
-                                            Sahara sudah membantu saya menjangkau pelanggan di daer...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="card">
-                                    <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                        <img
-                                            src="https://i.imgur.com/qfnDWvb.png"
-                                            alt=""
-                                            className="img-fluid"
-                                        />
-                                        <a href="#!">
-                                            <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>
-                                        </a>
-                                    </div>
-                                    <div className="card-body">
-                                        <p className="name">Berita Satu</p>
-                                        <h5 className="card-title">Sahara Perkuat 50 Ribu Warung Kuliner di Jabot...</h5>
-                                        <p className="card-text">
-                                            Sahara sudah membantu saya menjangkau pelanggan di daer...
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                           
+                                ))
+                            }
                         </Slider>
                     </div>
                 </div>

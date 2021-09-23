@@ -50,11 +50,6 @@
     div {
       overflow: scroll;
       overflow-x: hidden;
-      // display: block;
-      // position: absolute;
-      // animation: linear infinite alternate;
-      // animation-name: run;
-      // animation-duration: 2s;
     }
     div::-webkit-scrollbar {
       width: 0;
@@ -63,16 +58,79 @@
     div::-webkit-scrollbar-thumb {
       background: #ff0000;
     }
+  }
 
-    // @-webkit-keyframes run {
-    //     0% {
-    //       left: 0;
-    //       transform: translateX(0);
-    //     }
-    //     100% {
-    //       left: 100%;
-    //       transform: translateX(-100%);
-    //     }
-    // }
+  // tab size
+  @media (max-width: 973px) {
+    min-height: auto;
+    padding: 20px 0px;
+    .container {
+      .row {
+        min-height: auto;
+        h3 {
+          font-size: 30px;
+          line-height: 45px;
+        }
+        p {
+          margin-bottom: 30px;
+        }
+
+        #download_app {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    // Trusted By
+    #c_H_Dipercaya_Oleh {
+      p{
+        margin: 15px 0px 30px 0px;
+      }
+
+      margin-bottom: 30px;
+      img{
+        width: 160%;
+      }
+    }
+  }
+
+
+  // mob size 
+  @media (max-width: 375px) {
+    .container {
+      .row {
+        min-height: auto;
+        h3 {
+          font-size: 25px;
+          line-height: 35px;
+        }
+        p {
+          margin-bottom: 30px;
+          line-height: 22px;
+        }
+
+        #download_app {
+          margin-bottom: 20px;
+          img{
+            width: 100px;
+          }
+          img:nth-child(2) {
+            margin: 0px 5px;
+          }
+        }
+      }
+    }
+
+    // Trusted By
+    #c_H_Dipercaya_Oleh {
+      p{
+        margin: 15px 0px 30px 0px;
+      }
+
+      margin-bottom: 30px;
+      img{
+        width: 290%;
+      }
+    }
   }
 }

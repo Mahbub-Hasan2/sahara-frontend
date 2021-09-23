@@ -30,6 +30,7 @@ const DownloadApp = dynamic(() => import('../components/ShareComponents/Download
 });
 
 export default function Home() {
+
   return (
     <>
       {/* <Loading /> */}
