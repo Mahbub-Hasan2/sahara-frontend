@@ -1,38 +1,113 @@
 @import "../../utilities/variables";
 @import "../../utilities/mixins";
 
-#C_H_DownloadApp_area{
-    height: 713px;
-    width: 100%;
-    background-image: url("/Assets/download\ app\ bg.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
+#C_H_DownloadApp_area {
+  height: 713px;
+  width: 100%;
+  background-image: url("/Assets/download\ app\ bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    .container{
-        @extend .container;
+  .container {
+    @extend .container;
+  }
+
+  .row {
+    .contents {
+        margin-top: 170px;
+      h5 {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 60px;
+        color: #282a3a;
+      }
+      img {
+        width: 125px;
+        background-color: #fff;
+        margin-right: 10px;
+        cursor: pointer;
+      }
     }
+  }
 
-    .row{
-        .contents{
-            h5{
-                font-family: Poppins;
-                font-weight: 600;
-                font-size: 40px;
-                line-height: 60px;
-                color: #282A3A;
-            }
-            img{
-                width: 125px;
-                background-color: #fff;
-                margin-right: 10px;
-                cursor: pointer;
-            }
+  @media (max-width: 857px) {
+    .row {
+      .contents {
+          margin-top: 30px;
+        h5 {
+            font-size: 35px;
+            line-height: 50px;
         }
+        img {
+          width: 110px;
+        }
+      }
     }
+  }
+
+  @media (max-width: 767px) {
+    height: auto;
+    background: #e5fff0;
+    padding: 80px 0px;
+
+    .row {
+      .contents {
+          margin-top: 0px;
+        text-align: center;
+        h5 {
+          font-size: 30px;
+          line-height: 42px;
+          margin-bottom: 50px;
+        }
+      }
+      .img-phone {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 447px) {
+    .row {
+      .contents {
+        h5 {
+          font-size: 23px;
+          line-height: 33px;
+          margin-bottom: 30px;
+        }
+        img {
+          width: 97.09px;
+          margin: 0px;
+        }
+        img:nth-child(2) {
+          margin: 0px 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 447px) {
+    .row {
+      .contents {
+        h5 {
+          font-size: 23px;
+          line-height: 33px;
+          margin-bottom: 30px;
+        }
+        img {
+          width: 85px;
+          margin-bottom: 10px;
+        }
+        img:nth-child(2) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

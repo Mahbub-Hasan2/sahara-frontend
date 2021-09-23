@@ -5,8 +5,8 @@ const DownloadApp = () => {
         <div id="C_H_DownloadApp_area">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md contents">
-                        <h5>Download aplikasi
+                    <div className="col-lg-6 col-md-6 contents">
+                        <h5>Download aplikasi<br/>
                             Sahara Sekarang!</h5>
 
                         <div className="downloadApp_imgs">
@@ -15,7 +15,7 @@ const DownloadApp = () => {
                             <img src="/Assets/AppGallery With.png" alt="" />
                         </div>
                     </div>
-                    <div className="col-md">
+                    <div className="col-lg-6 col-md-6 img-phone text-center">
                         <img src="/Assets/Device 2.png" alt="" className="img-fluid" />
                     </div>
                 </div>
