@@ -24,22 +24,27 @@
       font-size: 20px;
       line-height: 24px;
     }
-    h5 {
-      font-family: Poppins;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 30px;
-      line-height: 48px;
-      color: #8ccba5;
-      span {
-        margin-right: 15px;
-      }
-      .activ_box {
-        color: $black;
-      }
-      .dari {
-        font-weight: 500;
-        height: 40px;
+    div{
+      overflow: scroll;
+      overflow-x: hidden;
+      h5 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 48px;
+        color: #8ccba5;
+        display: flex;
+        span {
+          margin-right: 15px;
+        }
+        .activ_box {
+          color: $black;
+        }
+        .dari {
+          font-weight: 500;
+          height: 40px;
+        }
       }
     }
   }

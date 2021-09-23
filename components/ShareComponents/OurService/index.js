@@ -6,13 +6,15 @@ const OurService = () => {
             <div className="container  align-items center">
                 <div id="title_site">
                     <p>Layanan kami</p>
-                    <h5><span className="activ_box">Belanja Online</span> <span className="dari">|</span> <span>Sahara POS</span> <span className="dari">|</span> <span>Mpok Sahara</span> <span className="dari">|</span> <span>Supplier</span></h5>
+                    <div>
+                        <h5 className="text-truncate"><span className="activ_box">Belanja Online</span> <span className="dari">|</span> <span>Sahara POS</span> <span className="dari">|</span> <span>Mpok Sahara</span> <span className="dari">|</span> <span>Supplier</span></h5>
+                    </div>
                 </div>
                 <div className="row align-items-center">
-                    <div className="col-md">
+                    <div className="col-md pr-3">
                         <img src="Assets/service img.png" alt="" className="img-fluid" />
                     </div>
-                    <div className="col-md">
+                    <div className="col-md pl-4">
                         <h3>Menjangkau lebih luas<br />
                             Bersama UMKM Lokal
                         </h3>

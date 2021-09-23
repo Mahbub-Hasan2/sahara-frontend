@@ -26,7 +26,7 @@
     color: #282a3a;
   }
 
-  .MuiContainer-root{
+  .MuiContainer-root {
     background-image: url("/Assets/backgroundImg/testimoniaBG.png");
     background-repeat: no-repeat;
     background-size: 150px;
@@ -124,15 +124,41 @@
       stroke: black !important;
     }
 
-    .swiper-pagination-clickable{
+    .swiper-pagination-clickable {
       bottom: -36px;
       padding-bottom: 30px;
       margin-top: 40px;
     }
-    .swiper-pagination-bullet-active{
-      background: #5ACF93;
+    .swiper-pagination-bullet-active {
+      background: #5acf93;
       height: 10px;
       width: 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    min-height: auto;
+    padding: 80px 0px;
+
+    .head_line_title {
+      font-size: 7vw;
+      text-align: center;
+    }
+
+    #Testimonials {
+      .card {
+        text-align: start;
+        width: 100%;
+        height: auto;
+
+        .row {
+          .col-md-4 {
+            img {
+              clip-path: circle(90.4% at 49% 8%);
+            }
+          }
+        }
+      }
     }
   }
 }
