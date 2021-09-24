@@ -20,10 +20,12 @@ const Header = (props) => {
                     </Col>
                     <Col md={6}>
                         <Image
-                            src="/Assets/Device above fold home.png"
+                            src="https://i.imgur.com/HgZOMf0.png"
                             alt="Picture of the author"
                             width={264}
                             height={264}
+                            blurDataURL="https://i.imgur.com/HgZOMf0.png"
+                            placeholder="blur"
                             layout="responsive"
                             objectFit="cover"
                             loading="eager"
