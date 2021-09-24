@@ -8,6 +8,12 @@
     position: relative;
   }
   .footer_info_box {
+    @media (max-width: 767px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
     div {
       i {
         color: $DarkMintGreen;

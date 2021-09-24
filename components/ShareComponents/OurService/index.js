@@ -11,10 +11,10 @@ const OurService = () => {
                     </div>
                 </div>
                 <div className="row align-items-center">
-                    <div className="col-md pr-3">
+                    <div className="col-md pr-4 img-div">
                         <img src="Assets/service img.png" alt="" className="img-fluid" />
                     </div>
-                    <div className="col-md pl-4">
+                    <div className="col-md pl-5 content-div">
                         <h3>Menjangkau lebih luas<br />
                             Bersama UMKM Lokal
                         </h3>

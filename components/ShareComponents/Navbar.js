@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 
 const Navbar = () => {
+    const [navToggleBtn, setNavToggleBtn] = React.useState(true);
+
     useEffect(() => {
         var prevScrollpos = window.pageYOffset;
 
@@ -64,8 +66,10 @@ const Navbar = () => {
                         aria-controls="navbarButtonsExample"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
+                        onClick={() => setNavToggleBtn(!navToggleBtn)}
                     >
-                        <i className="fas fa-bars"></i>
+                        
+                        {navToggleBtn ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>}
                     </button>
 
                     {/* <!-- Collapsible wrapper --> */}
