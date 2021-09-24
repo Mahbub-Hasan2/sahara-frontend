@@ -19,13 +19,12 @@ const BlogsPage = () => {
         <div id="C_B_blogHeader_area">
             <div className="container">
                 <div className="head_line">
-                    {/* <img src="https://i.imgur.com/CMWLtKS.png" alt="" className="img-fluid" /> */}
                     <Image
                         src="https://i.imgur.com/CMWLtKS.png"
                         alt="Picture of the author"
                         width={398.4}
                         height={163.2}
-                        blurDataURL={`/_next/image?url="https://i.imgur.com/CMWLtKS.png"&w=16&q=1`}
+                        blurDataURL="https://i.imgur.com/CMWLtKS.png"
                         placeholder="blur"
                         layout="responsive"
                         objectFit="cover"
@@ -50,7 +49,7 @@ const BlogsPage = () => {
                                             alt="Picture of the author"
                                             width={316}
                                             height={200}
-                                            blurDataURL={`/_next/image?url=${blog.img}&w=16&q=1`}
+                                            blurDataURL={blog.img}
                                             placeholder="blur"
                                             layout="responsive"
                                             objectFit="cover"

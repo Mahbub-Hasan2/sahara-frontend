@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick";
-import Container from '@material-ui/core/Container';
+import Image from 'next/image';
+
 
 const lateCoveredFakeData = [
     {
@@ -90,10 +91,16 @@ const LateCovered = () => {
                                     <div key={index}>
                                         <div className="card mb-3">
                                             <div className="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                                                <img
+                                                <Image
                                                     src={data.img}
-                                                    alt=""
-                                                    className="img-fluid"
+                                                    alt="Picture of the author"
+                                                    width={270}
+                                                    height={200}
+                                                    blurDataURL={data.img}
+                                                    placeholder="blur"
+                                                    layout="responsive"
+                                                    objectFit="cover"
+                                                    loading="lazy"
                                                 />
                                                 <a href="#!">
                                                     <div className="mask" style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}></div>

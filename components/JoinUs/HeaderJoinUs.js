@@ -17,11 +17,12 @@ const HeaderJoinUs = () => {
                 <div className="map">
                     <h5>Kami tersebar di berbagai daerah</h5>
                     <Image
-                            src="/Assets/Map Jawa.png"
+                            src="https://i.imgur.com/Qmj5K5d.png"
                             alt="Picture of the author"
                             width={1228.8}
                             height={448.2}
-                            // layout="fill"
+                            blurDataURL="https://i.imgur.com/Qmj5K5d.png"
+                            placeholder="blur"
                             layout="responsive"
                             objectFit="cover"
                             loading="lazy"
