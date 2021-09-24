@@ -31,20 +31,20 @@ const AboutUsHeader = () => {
                 <div className="Our_achievements">
                     <h3>Pencapaian kami</h3>
                     <p>Our achievement in the journey depicted in numbers</p>
-                    <div className="C_A_counts  row justify-content-center">
-                        <div className="col-md">
+                    <div className="C_A_counts  row row-cols-2 row-cols-md-4 justify-content-center">
+                        <div className="col">
                             <h3>35</h3>
                             <p>Toko tersebar di indonesia</p>
                         </div>
-                        <div className="col-md">
+                        <div className="col">
                             <h3>30</h3>
                             <p>Fortune 500 Clients</p>
                         </div>
-                        <div className="col-md">
+                        <div className="col">
                             <h3>300</h3>
                             <p>Dedicated Members</p>
                         </div>
-                        <div className="col-md">
+                        <div className="col">
                             <h3>8</h3>
                             <p>Years of Journey</p>
                         </div>

@@ -7,16 +7,17 @@ const OurMission = () => {
         <div id="C_A_OurMission_area">
             <div className="container">
                 <div className="row align-items-center">
-                    <div className="col-md">
+                    <div className="col-md img-div">
                         <Image
-                                src="/Assets/backgroundImg/missionImg.png"
-                                alt="Picture of the author"
-                                width={380}
-                                height={500}
-                                // layout="fill"
-                                layout="intrinsic"
-                                objectFit="cover"
-                            />
+                            src="/Assets/backgroundImg/missionImg.png"
+                            alt="Picture of the author"
+                            width={380}
+                            height={500}
+                            // layout="fill"
+                            layout="intrinsic"
+                            objectFit="cover"
+                            className="img"
+                        />
                     </div>
                     <div className="col-md">
                         <h4>Misi kami</h4>

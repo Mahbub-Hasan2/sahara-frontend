@@ -2,11 +2,10 @@
 @import "../../utilities/variables";
 
 #C_J_profit_area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   min-height: 724px;
   background-color: #fff5de;
@@ -43,32 +42,63 @@
   }
 
   .cards {
-    .col-md-6 {
-      display: flex;
-
-      .img {
-        margin-right: 24px;
-        width: 140px;
-        img {
-        //   width: 100px;
+    .card {
+      background: rgba(255, 255, 255, 0);
+      img {
+        height: 72px !important;
+        width: 72px !important;
+      }
+      .card-title {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: #282a3a;
+        p {
+          margin-bottom: 0px;
         }
       }
-      .text {
-        h5 {
-          font-family: Poppins;
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 36px;
-          font-feature-settings: "salt" on, "liga" off;
-          color: #282a3a;
+      .card-text {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #282a3a;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    min-height: auto;
+
+    .head_lines {
+      text-align: center;
+      p {
+        font-size: 15px;
+        margin-bottom: 16px;
+      }
+      h4 {
+        font-size: 25px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    .head_lines {
+      h4 {
+        span{
+          padding-left: 10px;
+          margin-left: 10px;
         }
-        p {
-          font-family: Inter;
-          font-weight: 500;
-          font-size: 16px;
-          line-height: 19px;
-          color: #282a3a;
-          margin-bottom: 50px;
+      }
+    }
+    .cards {
+      .card {
+        text-align: center;
+        img{
+          margin-bottom: 10px;
         }
       }
     }

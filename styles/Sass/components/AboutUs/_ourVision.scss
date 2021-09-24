@@ -32,4 +32,23 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media (max-width: 767px) {
+    min-height: auto;
+    padding: 40px 0px;
+    .text-end {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    h4 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
 }

@@ -43,48 +43,166 @@
         border-radius: 8px;
       }
 
-      .img{
-          height: 511 !important;
+      .img {
+        height: 511 !important;
         img {
-            height: 100% !important;
-            border-radius: 15px;
-          }
+          height: 100% !important;
+          border-radius: 15px;
+        }
       }
     }
   }
 
-  .Our_achievements{
-      padding: 80px 0px;
-      color: #48CB7F;
+  .Our_achievements {
+    padding: 80px 0px;
+    color: #48cb7f;
+    text-align: center;
+
+    h3 {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 64px;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    .C_A_counts {
+      div {
+        padding: 0px;
+        h3 {
+          font-family: Inter;
+          font-weight: 800;
+          font-size: 48px;
+          line-height: 64px;
+        }
+        p {
+          font-family: Poppins;
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 983px) {
+    min-height: auto;
+    padding: 50px 0px;
+
+    .top_content {
+      .row {
+        h4 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 30px;
+        }
+        button {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .Our_achievements {
+      padding: 50px 0px;
+
+      p {
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      .C_A_counts {
+        div {
+          h3 {
+            font-size: 38px;
+            line-height: 64px;
+          }
+          p {
+            font-size: 17px;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 868px) {
+    .top_content {
+      .row {
+        h4 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+        p {
+          font-size: 17px;
+        }
+
+        .img {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .top_content {
       text-align: center;
+    }
+  }
+
+
+  @media (max-width: 983px) {
+    .top_content {
+      .row {
+        h4 {
+          font-size: 23px;
+          line-height: 30px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 25px;
+        }
+        button {
+          margin-bottom: 20px;
+          border-radius: 30px;
+        }
+      }
+    }
+
+    .Our_achievements {
+      padding: 40px 0px;
 
       h3{
-        font-family: Poppins;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 64px;
+        margin-bottom: 0px;
+        line-height: 33px;
       }
-      p{
-        font-family: Poppins;
-        font-size: 18px;
-        line-height: 32px;
+      p {
+        font-size: 14px;
+        line-height: 20px;
       }
 
-      .C_A_counts{
-          div{
-              padding: 0px;
-              h3{
-                font-family: Inter;
-                font-weight: 800;
-                font-size: 48px;
-                line-height: 64px;
-              }
-              p{
-                font-family: Poppins;
-                font-size: 18px;
-                line-height: 32px;
-              }
+      .C_A_counts {
+        div {
+          h3 {
+            font-size: 27px;
+            line-height: 40px;
           }
+          p {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
       }
+    }
   }
 }

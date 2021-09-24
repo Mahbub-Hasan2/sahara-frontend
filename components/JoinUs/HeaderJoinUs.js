@@ -10,7 +10,7 @@ const HeaderJoinUs = () => {
                     Bersama UMKM Lokal
                 </h3>
                 <p>
-                    Membantu usaha kecil untuk dapat menjangkau<br /> konsumen lebih luas.
+                    Membantu usaha kecil untuk dapat <br /> menjangkau konsumen lebih luas.
                 </p>
             </div>
             <Container maxWidth="lg">
@@ -22,7 +22,7 @@ const HeaderJoinUs = () => {
                             width={1228.8}
                             height={448.2}
                             // layout="fill"
-                            // layout="intrinsic"
+                            layout="responsive"
                             objectFit="cover"
                             loading="lazy"
                             className="img-fluid"
