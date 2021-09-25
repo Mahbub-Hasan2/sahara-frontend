@@ -36,6 +36,7 @@ const tosFakeData = [
 ]
 
 const TOS = () => {
+
     return (
         <div id="p_tos_area">
             <div className="container pt-3">
