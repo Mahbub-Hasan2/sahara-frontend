@@ -1,7 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 // import Image from 'next/image';
-import ReactPlayer from 'react-player';
+import Video from 'react-responsive-video';
 
 const Header = (props) => {
     return (
@@ -34,12 +34,7 @@ const Header = (props) => {
                         {/* <video autoPlay loop style={{ width: '500px', height: 'auto' }}>
                             <source src="/video/Hp.mp4" />
                         </video> */}
-                        <video autoPlay loop style={{ width: 'auto', height: '500px' }}>
-                            <source src="/video/HeadV.mp4" />
-                        </video>
-                        {/* <div>
-                            <ReactPlayer url="/video/HeadV.mp4" />
-                        </div> */}
+                        <Video mp4={`/video/HeadV.mp4`} />
                     </Col>
                 </Row>
             </div>
