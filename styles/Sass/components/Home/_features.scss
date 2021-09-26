@@ -74,19 +74,19 @@
           }
         }
       }
-      .box:hover {
-        transition: 0.5s;
-        cursor: pointer;
-        background: #1abd6a;
-        .counts {
-          color: #fff;
-        }
-        div {
-          h5 {
-            color: #fff;
-          }
-        }
-      }
+      // .box:hover {
+      //   transition: 0.5s;
+      //   cursor: pointer;
+      //   background: #1abd6a;
+      //   .counts {
+      //     color: #fff;
+      //   }
+      //   div {
+      //     h5 {
+      //       color: #fff;
+      //     }
+      //   }
+      // }
       .counts {
         width: 30px;
         text-align: center;

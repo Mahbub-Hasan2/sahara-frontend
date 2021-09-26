@@ -14,7 +14,7 @@ const Navbar = () => {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("c_s_Navbar_area").style.top = "0";
-                
+
             } else {
                 document.getElementById("c_s_Navbar_area").style.top = "-65px";
             }
@@ -23,7 +23,7 @@ const Navbar = () => {
         window.addEventListener('scroll', changeNavbarBg);
     }, []);
 
-    
+
     const [white, setWhite] = React.useState(false);
     useEffect(() => {
         const changeNavbarBg = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
         };
         window.addEventListener('scroll', changeNavbarBg);
     }, []);
-  
+
 
 
     return (
@@ -68,7 +68,7 @@ const Navbar = () => {
                         aria-label="Toggle navigation"
                         onClick={() => setNavToggleBtn(!navToggleBtn)}
                     >
-                        
+
                         {navToggleBtn ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>}
                     </button>
 
@@ -99,16 +99,16 @@ const Navbar = () => {
                         </ul>
                         {/* <!-- Left links --> */}
 
-                        <div className="d-flex align-items-center">
-                            <button type="button" className="btn btn-primary me-3 def_active_btn">
-                                Belanja Sekarang
-                            </button>
-                            <button type="button" className="btn btn-link px-3 btn-ID">
-                                ID
-                            </button>
-                            <button type="button" className="btn btn-link px-3 btn-EN">
-                                EN
-                            </button>
+                        <div className="text-center-m">
+                                <button type="button" className="btn btn-primary me-3 def_active_btn">
+                                    Belanja Sekarang
+                                </button>
+                                <button type="button" className="btn btn-link px-3 btn-ID">
+                                    ID
+                                </button>
+                                <button type="button" className="btn btn-link px-3 btn-EN">
+                                    EN
+                                </button>
                         </div>
                     </div>
                     {/* <!-- Collapsible wrapper --> */}
