@@ -14,7 +14,7 @@ const Footer = () => {
                             {/* <!-- Grid row --> */}
                             <div className="row mt-3">
                                 {/* <!-- Grid column --> */}
-                                <div className="col-md-3 col-lg-4 col-xl-4 mx-auto mb-4">
+                                <div className="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
                                     {/* <!-- Content --> */}
                                     <h6 className="text-left-m text_head_line fw-bold mb-4">
                                         <img src="/Assets/Illustration/PNG/Sahara Logo.png" alt="" className="footer_logo" />
@@ -41,7 +41,7 @@ const Footer = () => {
                                 {/* <!-- Grid column --> */}
 
                                 {/* <!-- Grid column --> */}
-                                <div className="pl-m text-left-m col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 m-0 p-0">
+                                <div className="pl-m text-left-m col-md-2 col-lg-3 col-xl-3 mx-auto mb-md-0 m-0 p-0">
                                     {/* <!-- Links --> */}
                                     <h6 className="text_head_line fw-bold mb-4">
                                         PT. Savindo Karya Perdana
