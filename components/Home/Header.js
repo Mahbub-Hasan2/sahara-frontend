@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import Image from 'next/image';
+// import Image from 'next/image';
+import ReactPlayer from 'react-player';
 
 const Header = (props) => {
     return (
@@ -19,7 +20,7 @@ const Header = (props) => {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <Image
+                        {/* <Image
                             src="https://i.imgur.com/HgZOMf0.png"
                             alt="Picture of the author"
                             width={264}
@@ -29,7 +30,16 @@ const Header = (props) => {
                             layout="responsive"
                             objectFit="cover"
                             loading="eager"
-                        />
+                        /> */}
+                        {/* <video autoPlay loop style={{ width: '500px', height: 'auto' }}>
+                            <source src="/video/Hp.mp4" />
+                        </video> */}
+                        <video autoPlay loop style={{ width: 'auto', height: '500px' }}>
+                            <source src="/video/HeadV.mp4" />
+                        </video>
+                        {/* <div>
+                            <ReactPlayer url="/video/HeadV.mp4" />
+                        </div> */}
                     </Col>
                 </Row>
             </div>
