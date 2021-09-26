@@ -9,10 +9,14 @@
   }
   .footer_info_box {
     @media (max-width: 767px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
+      // display: flex;
+      // align-items: left;
+      .text-left-m{
+        text-align: start;
+      }
+      h5{
+        text-align: start;
+      }
     }
     div {
       i {
@@ -70,7 +74,7 @@
 
   .downloadApp_imgs {
     img {
-      width: 121.33px;
+      width: 125.33px;
       margin-bottom: 8px;
     }
   }
@@ -88,6 +92,26 @@
     background-color: $HintOfGreen;
     border-radius: 50px;
     padding: 10px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    // display: flex;
+    // align-items: left;
+    .text-left-m{
+      text-align: start;
+    }
+    .pl-m{
+      padding-left: 15px !important;
+    }
+  }
+  @media (max-width: 395px) {
+    .downloadApp_imgs {
+      img {
+        width: 170.33px;
+        margin: 8px;
+        padding-left: 5px;
+      }
     }
   }
 }
