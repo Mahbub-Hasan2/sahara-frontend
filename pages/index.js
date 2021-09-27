@@ -1,5 +1,5 @@
 /* eslint-disable react/display-name */
-import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic';
 import Loading from "../components/ShareComponents/Loading";
 import { useRouter } from 'next/router';
 

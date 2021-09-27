@@ -1,22 +1,54 @@
+/* eslint-disable react/display-name */
 import React from 'react';
-import AboutUsHeader from '../components/AboutUs/AboutUsHeader';
-import OurMission from '../components/AboutUs/OurMission';
-import OurJourney from '../components/AboutUs/OurJourney';
-import OurVision from '../components/AboutUs/OurVision';
-import OurService from '../components/ShareComponents/OurService';
-import DownloadApp from '../components/ShareComponents/DownloadApp';
-import PeopleInSahara from '../components/AboutUs/PeopleInSahara';
+import dynamic from 'next/dynamic';
+import Loading from "../components/ShareComponents/Loading";
+
+const AboutUsHeader = dynamic(() => import('../components/AboutUs/AboutUsHeader'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
+const OurMission = dynamic(() => import('../components/AboutUs/OurMission'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
+const OurJourney = dynamic(() => import('../components/AboutUs/OurJourney'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
+const OurVision = dynamic(() => import('../components/AboutUs/OurVision'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
+const OurService = dynamic(() => import('../components/ShareComponents/OurService'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
+const DownloadApp = dynamic(() => import('../components/ShareComponents/DownloadApp'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
+const PeopleInSahara = dynamic(() => import('../components/AboutUs/PeopleInSahara'), {
+    loading: () => <Loading />,
+    ssr: false,
+});
+
 
 const AboutUs = () => {
     return (
         <>
-            <AboutUsHeader/>
-            <OurMission/>
-            <OurVision/>
-            <OurService/>
-            <OurJourney/>
-            <PeopleInSahara/>
-            <DownloadApp/>
+            <AboutUsHeader />
+            <OurMission />
+            <OurVision />
+            <OurService />
+            <OurJourney />
+            <PeopleInSahara />
+            <DownloadApp />
         </>
     );
 };
