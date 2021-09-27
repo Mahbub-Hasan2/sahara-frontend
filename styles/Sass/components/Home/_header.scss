@@ -47,17 +47,20 @@
       margin-top: 50px;
       margin-bottom: 40px;
     }
-    div {
-      overflow: scroll;
-      overflow-x: hidden;
+    img{
+      width: 100%;
     }
-    div::-webkit-scrollbar {
-      width: 0;
-      background: transparent;
-    }
-    div::-webkit-scrollbar-thumb {
-      background: #ff0000;
-    }
+    // div {
+    //   overflow: scroll;
+    //   overflow-x: hidden;
+    // }
+    // div::-webkit-scrollbar {
+    //   width: 0;
+    //   background: transparent;
+    // }
+    // div::-webkit-scrollbar-thumb {
+    //   background: #ff0000;
+    // }
   }
 
   // tab size
@@ -89,7 +92,7 @@
 
       margin-bottom: 30px;
       img{
-        width: 160%;
+        width: 150% !important;
       }
     }
   }
@@ -129,7 +132,7 @@
 
       margin-bottom: 30px;
       img{
-        width: 290%;
+        width: 290% !important;
       }
     }
   }

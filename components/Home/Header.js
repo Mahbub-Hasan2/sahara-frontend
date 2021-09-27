@@ -34,7 +34,7 @@ const Header = (props) => {
                         {/* <video autoPlay loop style={{ width: '500px', height: 'auto' }}>
                             <source src="/video/Hp.mp4" />
                         </video> */}
-                        <Video mp4={`/video/HeadV.mp4`} />
+                        <Video mp4={`/video/Hero Illustration.mp4`} />
                     </Col>
                 </Row>
             </div>
@@ -43,9 +43,8 @@ const Header = (props) => {
             <div id="c_H_Dipercaya_Oleh">
                 <p>Dipercaya Oleh</p>
 
-                <div>
-                    <img src="Assets/Partner.png" alt="" />
-                </div>
+                <img src="/video/logo.gif" alt="" />
+
 
             </div>
         </div>

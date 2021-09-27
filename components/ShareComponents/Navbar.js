@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import React, { useEffect, useState } from 'react';
@@ -100,15 +101,19 @@ const Navbar = () => {
                         {/* <!-- Left links --> */}
 
                         <div className="text-center-m">
-                                <button type="button" className="btn btn-primary me-3 def_active_btn">
-                                    Belanja Sekarang
-                                </button>
+                            <button type="button" className="btn btn-primary me-3 def_active_btn">
+                                Belanja Sekarang
+                            </button>
+                            <Link href="/" locale="en">
                                 <button type="button" className="btn btn-link px-3 btn-ID">
                                     ID
                                 </button>
+                            </Link>
+                            <Link href="/" locale="fr">
                                 <button type="button" className="btn btn-link px-3 btn-EN">
                                     EN
                                 </button>
+                            </Link>
                         </div>
                     </div>
                     {/* <!-- Collapsible wrapper --> */}

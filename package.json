@@ -13,6 +13,7 @@
     "@material-ui/icons": "^4.11.2",
     "next": "11.1.2",
     "next-images": "^1.8.1",
+    "next-translate": "^1.1.0",
     "nprogress": "^0.2.0",
     "react": "17.0.2",
     "react-bootstrap": "^1.6.3",
