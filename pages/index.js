@@ -39,7 +39,7 @@ export default function Home() {
       {/* <Loading /> */}
       <Header />
       <OurService />
-      <h2>hello - {locale}</h2>
+      {/* <h2>hello - {locale}</h2> */}
       <Features />
       <Testimonials />
       <LateCovered />
